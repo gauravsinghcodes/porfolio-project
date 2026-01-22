@@ -1,7 +1,7 @@
 :root {
     --primary-color: #0069d9;
     --secondary-color: #6c757d;
-    --background-color: #ffffff;
+    --background-gradient: linear-gradient(135deg, #f5f7fa, #c3cfe2);
     --surface-color: #ffffff;
     --text-color: #333333;
     --text-color-light: #495057;
@@ -23,7 +23,7 @@
 html[data-theme='dark'] {
     --primary-color: #e0e0e0;
     --secondary-color: #adb5bd;
-    --background-color: #121212;
+    --background-gradient: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
     --surface-color: #1e1e1e;
     --text-color: #e9ecef;
     --text-color-light: #ced4da;
@@ -57,8 +57,18 @@ body {
     font-size: var(--font-size-base);
     line-height: var(--line-height-base);
     color: var(--text-color);
-    background-color: var(--background-color);
+    background-attachment: fixed;
+    background: var(--background-gradient);
+    margin: 3px;
     transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+#hero,
+#about,
+#skills,
+#projects,
+#contact {
+    background: transparent;
 }
 
 header {
@@ -70,6 +80,11 @@ header {
     z-index: 100;
     transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
+
+header nav {
+    display: block;
+}
+
 
 header .container {
     display: flex;
@@ -103,15 +118,15 @@ header nav ul li a:hover {
     background: transparent;
     border: none;
     cursor: pointer;
-    padding: 0.5rem;
+    padding: 10px;
 }
 
 .menu-toggle .bar {
-    display: block;
-    width: 100%;
+    width: 26px;
     height: 3px;
     background-color: var(--text-color);
     border-radius: 3px;
+    display: block;
     transition: all 0.3s ease-in-out;
 }
 
@@ -119,13 +134,14 @@ header nav ul li a:hover {
     display: flex;
     align-items: center;
     justify-content: right;
+    margin-right: 12px;
 }
 
 .switch-label {
     position: relative;
     display: inline-block;
-    width: 50px;
-    height: 26px;
+    width: 52px;
+    height: 28px;
     cursor: pointer;
 }
 
@@ -137,34 +153,51 @@ header nav ul li a:hover {
 
 .slider {
     position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: #ccc;
-    border-radius: 26px;
-    transition: background-color 0.4s;
+    inset: 0;
+    background: linear-gradient(135deg, #ddd, #bbb);
+    border-radius: 40px;
+    transition: all 0.3s ease;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.15);
 }
 
 .slider::before {
     content: "";
     position: absolute;
-    height: 20px;
-    width: 20px;
+    height: 22px;
+    width: 22px;
     left: 3px;
-    bottom: 3px;
-    background-color: white;
+    top: 3px;
+    background: white;
     border-radius: 50%;
-    transition: transform 0.4s;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
 }
 
 
 .switch-checkbox:checked+.slider {
-    background-color: var(--primary-color);
+    background: linear-gradient(135deg, #4facfe, #00f2fe);
 }
 
 .switch-checkbox:checked+.slider::before {
     transform: translateX(24px);
+}
+
+.switch-label:hover .slider {
+    filter: brightness(1.05);
+}
+
+.slider::after {
+    content: "☀️";
+    position: absolute;
+    left: 6px;
+    top: 4px;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+.switch-checkbox:checked+.slider::after {
+    content: "🌙";
+    left: 30px;
 }
 
 #hero {
@@ -190,6 +223,7 @@ header nav ul li a:hover {
     max-width: 600px;
     margin: 0 auto;
 }
+
 
 #about {
     padding: calc(var(--spacing-unit) * 4) 0;
@@ -275,6 +309,17 @@ header nav ul li a:hover {
 }
 
 
+.skill-card,
+.project-card {
+    -webkit-tap-highlight-color: transparent; 
+}
+
+
+.skill-card:active,
+.project-card:active {
+    transform: scale(0.97);
+    box-shadow: 0 6px 15px var(--shadow-color);
+}
 
 #projects {
     padding: calc(var(--spacing-unit) * 4) 0;
@@ -294,7 +339,12 @@ header nav ul li a:hover {
     border: 1px solid var(--border-color);
     box-shadow: 0 4px 8px var(--shadow-color);
     overflow: hidden;
-    transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px var(--shadow-color);
 }
 
 .project-image {
@@ -516,7 +566,41 @@ footer ul li a:hover {
     color: var(--primary-color);
 }
 
+.social-icons {
+    display: flex;
+    gap: 1.2rem;
+    list-style: none;
+}
+
+.social-icons a {
+    font-size: 1.5rem;
+    color: var(--text-color-light);
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: var(--primary-color);
+    transform: translateY(-4px);
+}
+
 @media (max-width: 768px) {
+    body {
+        padding: 0 9px;
+    }
+
+    header .container {
+        padding: 0 9px;
+    }
+
+    #hero .container,
+    #about .container,
+    #skills .container,
+    #projects .container,
+    #contact .container,
+    footer .container {
+        padding: 0 10px;
+    }
+
     #hero h1 {
         font-size: 2.8rem;
     }
@@ -545,7 +629,6 @@ footer ul li a:hover {
         left: 0;
         width: 100%;
         background: var(--surface-color);
-        z-index: 99;
         box-shadow: 0 4px 10px var(--shadow-color);
     }
 
@@ -564,6 +647,10 @@ footer ul li a:hover {
         display: flex;
         flex-direction: column;
         gap: 6px;
+    }
+
+    .skills-grid {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
@@ -609,17 +696,9 @@ footer ul li a:hover {
     #contact {
         padding: calc(var(--spacing-unit) * 2) 0;
     }
-}
 
-
-@media (max-width: 768px) {
-    .skills-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@media (max-width: 480px) {
     .skills-grid {
         grid-template-columns: 1fr;
     }
 }
+
