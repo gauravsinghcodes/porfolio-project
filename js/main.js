@@ -17,6 +17,12 @@ const projects = [{
     description: "A client-side task management application built with vanilla JavaScript. Allows users to add, edit, delete, and mark tasks as complete, with all data saved to localStorage.",
     liveUrl: "https://internet-connection-check.vercel.app",
     codeUrl: "https://github.com/gauravsinghcodes/internet-connection-checker"
+},
+{
+    title: "Calculator using JavaScript",
+    description: "A simple calculator built with HTML, CSS, and JavaScript.",
+    liveUrl: "https://calculator-puce-beta-95.vercel.app",
+    codeUrl: "https://github.com/gauravsinghcodes/calculator-"
 }
 ];
 
