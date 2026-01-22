@@ -676,6 +676,7 @@ footer ul li a:hover {
         flex-wrap: nowrap;
         width: max-content;
         max-width: 95%;
+        margin: 0;
     }
 
     .icon-nav {
