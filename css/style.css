@@ -224,6 +224,7 @@ header nav ul li a:hover {
 
 .about-text p {
     margin-bottom: var(--spacing-unit);
+    font-size: 1.2rem;
 }
 
 
@@ -312,6 +313,7 @@ header nav ul li a:hover {
 .project-links {
     padding: 0 calc(var(--spacing-unit) * 1.5) calc(var(--spacing-unit) * 1.5);
     display: flex;
+    margin: 10px;
     gap: var(--spacing-unit);
 }
 
