@@ -12,25 +12,29 @@
 </head>
 
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#hero">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+    <header class="floating-nav">
+
+        <nav class="icon-nav">
+            <a href="#hero" class="nav-item active">
+                <i class="fas fa-home"></i>
+            </a>
+            <a href="#about" class="nav-item">
+                <i class="fas fa-user"></i>
+            </a>
+            <a href="#skills" class="nav-item">
+                <i class="fas fa-code"></i>
+            </a>
+            <a href="#projects" class="nav-item">
+                <i class="fas fa-briefcase"></i>
+            </a>
+            <a href="#contact" class="nav-item">
+                <i class="fas fa-envelope"></i>
+            </a>
         </nav>
 
-        <button class="menu-toggle" aria-label="Toggle navigation menu">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-        </button>
 
-        <div class="theme-switcher">
-            <label for="theme-toggle" class="switch-label">
+        <div class="floating-theme">
+            <label class="switch-label">
                 <input type="checkbox" id="theme-toggle" class="switch-checkbox">
                 <span class="slider"></span>
             </label>
@@ -38,11 +42,12 @@
 
     </header>
 
+
     <section id="hero">
         <div class="container">
             <h1>Hi, I'm Gaurav Singh 👋</h1>
             <p class="hero-subtitle">
-                Full Stack  Developer
+                Full Stack Developer
             </p>
             <p>
                 A passionate and driven B.Tech Computer Science and Engineering student
@@ -132,14 +137,10 @@
         <div class="projects-container">
 
             <div class="project-card">
-                <img src="images/project-placeholder-1.jpg" alt="A screenshot or mockup of Project One"
-                    class="project-image">
+                <img src="images/ai-chatbot.png" alt="AI Powered Chatbot" class="project-image">
                 <div class="project-info">
-                    <h3>Project One Title</h3>
-                    <p>
-                        A brief and compelling description of the project, highlighting the key technologies used and
-                        the problem it solves. Keep it to 2-3 sentences.
-                    </p>
+                    <h3></h3>
+                    <p></p>
                 </div>
                 <div class="project-links">
                     <a href="#" target="_blank">Live Demo</a>
@@ -148,14 +149,10 @@
             </div>
 
             <div class="project-card">
-                <img src="images/project-placeholder-2.jpg" alt="A screenshot or mockup of Project One"
-                    class="project-image">
+                <img src="images/weather.png" alt="Weather Forecasting System" class="project-image">
                 <div class="project-info">
-                    <h3>Project Two Title</h3>
-                    <p>
-                        A brief and compelling description of the project, highlighting the key technologies used and
-                        the problem it solves. Keep it to 2-3 sentences.
-                    </p>
+                    <h3></h3>
+                    <p></p>
                 </div>
                 <div class="project-links">
                     <a href="#" target="_blank">Live Demo</a>
@@ -164,14 +161,10 @@
             </div>
 
             <div class="project-card">
-                <img src="images/project-placeholder-3.jpg" alt="A screenshot or mockup of Project One"
-                    class="project-image">
+                <img src="images/internet.png" alt="Internet Connection Monitor" class="project-image">
                 <div class="project-info">
-                    <h3>Project Three Title</h3>
-                    <p>
-                        A brief and compelling description of the project, highlighting the key technologies used and
-                        the problem it solves. Keep it to 2-3 sentences.
-                    </p>
+                    <h3></h3>
+                    <p></p>
                 </div>
                 <div class="project-links">
                     <a href="#" target="_blank">Live Demo</a>

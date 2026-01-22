@@ -3,21 +3,18 @@ const htmlElement = document.documentElement;
 const projects = [{
     title: "AI-Chatbott",
     description: "A modern AI-powered chatbot web application built using HTML, CSS, JavaScript, and a serverless backend deployed on Vercel using Google Gemini API. This project is created as a practice project to understand full-stack deployment, API integration, and serverless architecture.",
-    imageUrl: "./images/ai-chatbot.png",
     liveUrl: "https://ai-chatbott-indol.vercel.app",
     codeUrl: "https://github.com/gauravsinghcodes/ai-chatbott"
 },
 {
     title: "Weather Forecast App",
     description: "A modern and responsive Weather Forecast Web App that shows real-time weather information and hourly forecasts for any city using the WeatherAPI.\nThe app also supports current location weather and dynamic background gradients based on weather conditions.",
-    imageUrl: "./images/weather.png",
     liveUrl: "https://weather-forecast-app-taupe.vercel.app/",
     codeUrl: "https://github.com/gauravsinghcodes/weather-forecast-app"
 },
 {
     title: "Internet Connection Status Checker",
     description: "A client-side task management application built with vanilla JavaScript. Allows users to add, edit, delete, and mark tasks as complete, with all data saved to localStorage.",
-    imageUrl: "./images/internet.png",
     liveUrl: "https://internet-connection-check.vercel.app",
     codeUrl: "https://github.com/gauravsinghcodes/internet-connection-checker"
 }
@@ -27,49 +24,33 @@ const themeToggle = document.querySelector('#theme-toggle');
 const projectsContainer = document.querySelector('.projects-container');
 const contactForm = document.querySelector('#contact-form');
 const formStatus = document.querySelector('#form-status');
-const menuToggle = document.querySelector('.menu-toggle');
+
 const nav = document.querySelector('header nav');
 
 
 const renderProjects = () => {
-    let allProjectsHTML = '';
-    projects.forEach(project => {
-        const projectCardHTML = `
-      <div class="project-card">
-        <div class="project-image-container">
-            <img 
-              src="${project.imageUrl}" 
-              alt="Screenshot of the ${project.title} project" 
-              class="project-image"
-            >
-        </div>
-        <div class="project-info">
-          <h3>${project.title}</h3>
-          <p>${project.description}</p>
-          <div class="project-links">
-            <a 
-              href="${project.liveUrl}" 
-              class="btn" 
-              target="_blank" 
-              rel="noopener noreferrer"
-            >
-              Live Demo
-            </a>
-            <a 
-              href="${project.codeUrl}" 
-              class="btn btn-secondary" 
-              target="_blank" 
-              rel="noopener noreferrer"
-            >
-              View Code
-            </a>
-          </div>
-        </div>
-      </div>
-    `;
-        allProjectsHTML += projectCardHTML;
+    const projectCards = document.querySelectorAll('.project-card');
+
+    projectCards.forEach((card, index) => {
+        if (projects[index]) {
+            const project = projects[index];
+
+            // Update Title
+            const titleElement = card.querySelector('h3');
+            if (titleElement) titleElement.textContent = project.title;
+
+            // Update Description
+            const descElement = card.querySelector('p');
+            if (descElement) descElement.textContent = project.description;
+
+            // Update Links
+            const links = card.querySelectorAll('.project-links a');
+            if (links.length >= 2) {
+                links[0].href = project.liveUrl; // Live Demo
+                links[1].href = project.codeUrl; // View Code
+            }
+        }
     });
-    projectsContainer.innerHTML = allProjectsHTML;
 };
 
 
@@ -89,9 +70,7 @@ themeToggle.addEventListener('click', () => {
     }
 })();
 
-menuToggle.addEventListener('click', () => {
-    nav.classList.toggle('active');
-});
+
 
 document.addEventListener('DOMContentLoaded', () => {
     renderProjects();
