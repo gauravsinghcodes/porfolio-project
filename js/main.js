@@ -1,6 +1,12 @@
 const htmlElement = document.documentElement;
 
 const projects = [{
+    title: "Spotify Clone",
+    description: "A responsive web application replicating Spotify's core features using HTML, CSS, and JavaScript.",
+    liveUrl: "https://spotify-clone-kappa-rouge.vercel.app",
+    codeUrl: "https://github.com/gauravsinghcodes/spotify_clone"
+},
+{
     title: "AI-Chatbott",
     description: "A modern AI-powered chatbot web application built using HTML, CSS, JavaScript, and a serverless backend deployed on Vercel using Google Gemini API. This project is created as a practice project to understand full-stack deployment, API integration, and serverless architecture.",
     liveUrl: "https://ai-chatbott-indol.vercel.app",
