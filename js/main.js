@@ -1,6 +1,12 @@
 const htmlElement = document.documentElement;
 
 const projects = [{
+    title: "Fizzi-Fizz",
+    description: "An E-commerce website built using HTML, CSS, and JavaScript. It features a modern design, responsive layout, and interactive elements to enhance user experience.",
+    liveUrl: "https://fizzi-fizz.vercel.app/",
+    codeUrl: "https://github.com/gauravsinghcodes/Fizzi-Fizz"
+},
+{
     title: "Spotify Clone",
     description: "A responsive web application replicating Spotify's core features using HTML, CSS, and JavaScript.",
     liveUrl: "https://spotify-clone-kappa-rouge.vercel.app",
