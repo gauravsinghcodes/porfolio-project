@@ -28,7 +28,7 @@ const projects = [{
     title: "iTask ",
     description: "Built a responsive To-Do Task Management application that allows users to add, edit, delete, and manage tasks efficiently. Implemented local storage to persist tasks across sessions, ensuring data is retained even after page refresh, with a clean UI and smooth user experience.",
     liveUrl: "https://todo-task-managerr.netlify.app/",
-    codeUrl: ""
+    codeUrl: "https://github.com/gauravsinghcodes/iTask_Task-Manger"
 },
 {
     title: "Internet Connection Status Checker",
