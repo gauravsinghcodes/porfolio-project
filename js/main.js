@@ -25,6 +25,12 @@ const projects = [{
     codeUrl: "https://github.com/gauravsinghcodes/weather-forecast-app"
 },
 {
+    title: "iTask ",
+    description: "Built a responsive To-Do Task Management application that allows users to add, edit, delete, and manage tasks efficiently. Implemented local storage to persist tasks across sessions, ensuring data is retained even after page refresh, with a clean UI and smooth user experience.",
+    liveUrl: "https://todo-task-managerr.netlify.app/",
+    codeUrl: ""
+},
+{
     title: "Internet Connection Status Checker",
     description: "A client-side task management application built with vanilla JavaScript. Allows users to add, edit, delete, and mark tasks as complete, with all data saved to localStorage.",
     liveUrl: "https://internet-connection-check.vercel.app",
