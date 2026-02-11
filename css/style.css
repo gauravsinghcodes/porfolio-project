@@ -755,9 +755,6 @@ footer ul li a:hover {
     }
 
 
-
-
-
     .theme-switcher {
         margin-left: auto;
     }
@@ -765,6 +762,13 @@ footer ul li a:hover {
     .skills-grid {
         grid-template-columns: repeat(2, 1fr);
     }
+
+    body::after {
+        content: "";
+        display: block;
+        height: 100px; /*extra scroll space */
+    }
+
 }
 
 @media (max-width: 480px) {
