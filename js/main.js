@@ -1,8 +1,13 @@
 const htmlElement = document.documentElement;
 
 const projects = [{
+    title: "Feedback App",
+    description: "A user-friendly web application built with Flask, HTML/CSS, and SQLite that allows users to submit feedback and enables admin to review and update feedback status via a secure dashboard. Automated email notifications are also sent during submission and resolution.",
+    liveUrl: "https://gauravsinghcodes.pythonanywhere.com/",
+    codeUrl: "https://github.com/gauravsinghcodes/websiite_feedback_collector"
+},{
     title: "Fizzi-Fizz",
-    description: "An E-commerce website built using HTML, CSS, and JavaScript. It features a modern design, responsive layout, and interactive elements to enhance user experience.",
+    description: "An E-commerce landing page built using HTML, CSS, and JavaScript. It features a modern design, responsive layout, and interactive elements to enhance user experience.",
     liveUrl: "https://fizzi-fizz.vercel.app/",
     codeUrl: "https://github.com/gauravsinghcodes/Fizzi-Fizz"
 },
@@ -32,15 +37,9 @@ const projects = [{
 },
 {
     title: "Internet Connection Status Checker",
-    description: "A client-side task management application built with vanilla JavaScript. Allows users to add, edit, delete, and mark tasks as complete, with all data saved to localStorage.",
+    description: "A simple and interactive web application that detects your internet connection status in real-time. It displays whether you're online or offline, your public IP address, and your network strength using the latest browser APIs.",
     liveUrl: "https://internet-connection-check.vercel.app",
     codeUrl: "https://github.com/gauravsinghcodes/internet-connection-checker"
-},
-{
-    title: "Calculator using JavaScript",
-    description: "A simple calculator built with HTML, CSS, and JavaScript.",
-    liveUrl: "https://calculator-puce-beta-95.vercel.app",
-    codeUrl: "https://github.com/gauravsinghcodes/calculator-"
 }
 ];
 
