@@ -10,6 +10,11 @@ const projects = [{
     description: "An E-commerce landing page built using HTML, CSS, and JavaScript. It features a modern design, responsive layout, and interactive elements to enhance user experience.",
     liveUrl: "https://fizzi-fizz.vercel.app/",
     codeUrl: "https://github.com/gauravsinghcodes/Fizzi-Fizz"
+},{
+    title: "AI Site Builder",
+    description: "An AI-powered Website Builder that generates and updates complete websites from simple prompts with real-time preview, version control, and responsive Tailwind-based layouts.",
+    liveUrl: "https://site-builder-frontend-nine.vercel.app/",
+    codeUrl: "https://github.com/gauravsinghcodes/Site-Builder"
 },
 {
     title: "Spotify Clone",
