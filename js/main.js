@@ -8,8 +8,8 @@ const projects = [{
 },
 {
     title: "Real-Time Group Chat App",
-    description: "A real-time group chat application built with React, Node.js, and Socket.IO, featuring instant messaging and typing indicators in a single chat room powered by WebSockets for seamless frontend-backend synchronization.",
-    liveUrl: "https://www.linkedin.com/posts/gaurav-singh-b3b3b7324_learning-webdev-react-ugcPost-7423411774235897856-sIka?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFHt1J8BDON6vpFvBoqNajg5Ks26GZrrGto",
+    description: "A real-time group chat application built with React and Socket.io, featuring persistent message history and dynamic room management. It offers a fully responsive, WhatsApp-inspired UI with live presence tracking and seamless room switching for a state-of-the-art user experience.",
+    liveUrl: "https://group-chatt-eta.vercel.app",
     codeUrl: "https://github.com/gauravsinghcodes/Group-Chatt"
 },
 {
