@@ -7,7 +7,7 @@ const projects = [{
     codeUrl: "https://github.com/gauravsinghcodes/websiite_feedback_collector"
 },
 {
-    title: "Group Chat",
+    title: "Real-Time Group Chat App",
     description: "A real-time group chat application built with React, Node.js, and Socket.IO, featuring instant messaging and typing indicators in a single chat room powered by WebSockets for seamless frontend-backend synchronization.",
     liveUrl: "https://www.linkedin.com/posts/gaurav-singh-b3b3b7324_learning-webdev-react-ugcPost-7423411774235897856-sIka?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFHt1J8BDON6vpFvBoqNajg5Ks26GZrrGto",
     codeUrl: "https://github.com/gauravsinghcodes/Group-Chatt"
