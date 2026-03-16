@@ -5,7 +5,20 @@ const projects = [{
     description: "A user-friendly web application built with Flask, HTML/CSS, and SQLite that allows users to submit feedback and enables admin to review and update feedback status via a secure dashboard. Automated email notifications are also sent during submission and resolution.",
     liveUrl: "https://gauravsinghcodes.pythonanywhere.com/",
     codeUrl: "https://github.com/gauravsinghcodes/websiite_feedback_collector"
-},{
+},
+{
+    title: "Group Chat",
+    description: "A real-time group chat application built with React, Node.js, and Socket.IO, featuring instant messaging and typing indicators in a single chat room powered by WebSockets for seamless frontend-backend synchronization.",
+    liveUrl: "https://www.linkedin.com/posts/gaurav-singh-b3b3b7324_learning-webdev-react-ugcPost-7423411774235897856-sIka?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFHt1J8BDON6vpFvBoqNajg5Ks26GZrrGto",
+    codeUrl: "https://github.com/gauravsinghcodes/Group-Chatt"
+},
+{
+    title: "Bookified",
+    description: "Developed Bookified, an AI voice-powered platform that turns PDFs into interactive conversational companions. Users can upload books, ask questions via voice, and receive AI-generated insights and summaries.",
+    liveUrl: "https://www.linkedin.com/posts/gaurav-singh-b3b3b7324_ai-nextjs-webdevelopment-ugcPost-7438632160908980224-COCO?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFHt1J8BDON6vpFvBoqNajg5Ks26GZrrGto",
+    codeUrl: "https://github.com/gauravsinghcodes/bookified"
+},
+{
     title: "Fizzi-Fizz",
     description: "An E-commerce landing page built using HTML, CSS, and JavaScript. It features a modern design, responsive layout, and interactive elements to enhance user experience.",
     liveUrl: "https://fizzi-fizz.vercel.app/",
