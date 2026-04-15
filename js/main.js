@@ -13,6 +13,12 @@ const projects = [{
     codeUrl: "https://github.com/gauravsinghcodes/Group-Chatt"
 },
 {
+    title: "Project Management",
+    description: "Built with React, Redux, Node.js/Express,  & PostgreSQL (via Prisma + Neon). It supports multi-workspace collaboration with role-based access, project & task tracking (with priorities, statuses, and due dates), and team management powered by Clerk for auth and Inngest for real-time background sync. Users get email notifications on task assignments and deployed on vercel.",
+    liveUrl: "https://project-management-ten-neon.vercel.app",
+    codeUrl: "https://github.com/gauravsinghcodes/Project-Management"
+},
+{
     title: "Bookified",
     description: "Developed Bookified, an AI voice-powered platform that turns PDFs into interactive conversational companions. Users can upload books, ask questions via voice, and receive AI-generated insights and summaries.",
     liveUrl: "https://www.linkedin.com/posts/gaurav-singh-b3b3b7324_ai-nextjs-webdevelopment-ugcPost-7438632160908980224-COCO?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFHt1J8BDON6vpFvBoqNajg5Ks26GZrrGto",
