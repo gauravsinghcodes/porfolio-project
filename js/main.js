@@ -43,7 +43,7 @@ const projects = [{
 },
 {
     title: "Bitlinks ",
-    description: "iTask is a premium, modern task management application built with React and Tailwind CSS, featuring a sleek glassmorphism UI and smooth animations. It offers seamless navigation between a smart dashboard and a dynamic task list, complete with a functional dark mode and persistent local storage for your productivity.",
+    description: "BitLinks is a high-performance URL management platform that enables teams to create custom-branded links, track analytics, and generate QR codes with ease. It offers a fast, secure, and privacy-focused experience with a streamlined workflow and no complex onboarding.",
     liveUrl: "https://bitlinks-rho-sooty.vercel.app/",
     codeUrl: "https://github.com/gauravsinghcodes/bitlinks"
 },
