@@ -42,6 +42,12 @@ const projects = [{
     codeUrl: "https://github.com/gauravsinghcodes/iTask_Task-Manger"
 },
 {
+    title: "Bitlinks ",
+    description: "iTask is a premium, modern task management application built with React and Tailwind CSS, featuring a sleek glassmorphism UI and smooth animations. It offers seamless navigation between a smart dashboard and a dynamic task list, complete with a functional dark mode and persistent local storage for your productivity.",
+    liveUrl: "https://bitlinks-rho-sooty.vercel.app/",
+    codeUrl: "https://github.com/gauravsinghcodes/bitlinks"
+},
+{
     title: "Spotify Clone",
     description: "A responsive web application replicating Spotify's core features using HTML, CSS, and JavaScript.",
     liveUrl: "https://spotify-clone-kappa-rouge.vercel.app",
