@@ -36,6 +36,12 @@ const projects = [{
     codeUrl: "https://github.com/gauravsinghcodes/Site-Builder"
 },
 {
+    title: "iTask ",
+    description: "iTask is a premium, modern task management application built with React and Tailwind CSS, featuring a sleek glassmorphism UI and smooth animations. It offers seamless navigation between a smart dashboard and a dynamic task list, complete with a functional dark mode and persistent local storage for your productivity.",
+    liveUrl: "https://itask-taskmanger.vercel.app/",
+    codeUrl: "https://github.com/gauravsinghcodes/iTask_Task-Manger"
+},
+{
     title: "Spotify Clone",
     description: "A responsive web application replicating Spotify's core features using HTML, CSS, and JavaScript.",
     liveUrl: "https://spotify-clone-kappa-rouge.vercel.app",
@@ -52,12 +58,6 @@ const projects = [{
     description: "A modern and responsive Weather Forecast Web App that shows real-time weather information and hourly forecasts for any city using the WeatherAPI.\nThe app also supports current location weather and dynamic background gradients based on weather conditions.",
     liveUrl: "https://weather-forecast-app-taupe.vercel.app/",
     codeUrl: "https://github.com/gauravsinghcodes/weather-forecast-app"
-},
-{
-    title: "iTask ",
-    description: "Built a responsive To-Do Task Management application that allows users to add, edit, delete, and manage tasks efficiently. Implemented local storage to persist tasks across sessions, ensuring data is retained even after page refresh, with a clean UI and smooth user experience.",
-    liveUrl: "https://todo-task-managerr.netlify.app/",
-    codeUrl: "https://github.com/gauravsinghcodes/iTask_Task-Manger"
 },
 {
     title: "Internet Connection Status Checker",
